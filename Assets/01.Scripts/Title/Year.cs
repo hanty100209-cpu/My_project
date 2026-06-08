@@ -12,7 +12,7 @@ public class Year : MonoBehaviour
         string inputText = inputField.text;
         if (inputText != null)
         {
-            so.year = inputText;
+            so.year = int.Parse(inputText);
             EditorUtility.SetDirty(so);
         }
         else

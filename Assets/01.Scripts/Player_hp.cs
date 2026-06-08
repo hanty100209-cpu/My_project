@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_hp : MonoBehaviour
 {
@@ -18,6 +19,6 @@ public class Player_hp : MonoBehaviour
     }
     public void Die()
     {
-        //죽었을때
+        SceneManager.LoadScene("Title_Scene");
     }
 }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bbdc52f59a4b246bdf24ae72b35034, type: 3}
   m_Name: Mission
   m_EditorClassIdentifier: 
-  gravity: -1
+  gravity: 1

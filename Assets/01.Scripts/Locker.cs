@@ -4,7 +4,7 @@ using UnityEngine;
 public class Locker : MonoBehaviour
 {
     [SerializeField] private GameObject _lock;
-    private void OnMouseDown()
+    public void OnLock()
     {
         _lock.SetActive(true);
     }

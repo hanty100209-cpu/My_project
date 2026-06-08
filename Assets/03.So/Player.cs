@@ -4,5 +4,5 @@ using UnityEngine;
 public class Player : ScriptableObject
 {
     public string p_name;
-    public string year;
+    public int year;
 }

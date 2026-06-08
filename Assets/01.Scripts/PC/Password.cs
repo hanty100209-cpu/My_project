@@ -7,14 +7,15 @@ public class Password : MonoBehaviour
     [SerializeField] private GameObject nextJob;
     [SerializeField] private GameObject isJob;
     [SerializeField] private int want_input;
+    [SerializeField] private Player data;
     public void InputNumber()
     {
         string inputText = inputField.text;
         if (int.TryParse(inputText, out int resultNumber))
         {
-            if(nextJob!=null&&isJob!=null)
+            if(nextJob!=null&&isJob!=null&&data!=null)
             {
-                if (resultNumber == want_input)
+                if (resultNumber == data.year)
                 {
                     Debug.Log("Yes_Password");
                     nextJob.SetActive(true);
