@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090fda816bc40f74eb5eb8094afe3d92, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  p_name: "\u3147\u3147"
-  year: 1002
+  p_name: gks
+  year: 1111

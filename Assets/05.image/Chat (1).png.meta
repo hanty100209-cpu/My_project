@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: 02bd63c341d1b464db0aa80d372db673
+guid: 72073da5796b4474b964b0909770169e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1654666640898351027
-    second: Chat (2)_0
+      213: -7952923780608208191
+    second: Chat (1)_0
+  - first:
+      213: -5662376537430393560
+    second: Chat (1)_1
+  - first:
+      213: 8434317024983232158
+    second: Chat (1)_2
+  - first:
+      213: 5182105580524184450
+    second: Chat (1)_3
+  - first:
+      213: 4725423219331758889
+    second: Chat (1)_4
+  - first:
+      213: 6678128275825218459
+    second: Chat (1)_5
+  - first:
+      213: -2305792444621437175
+    second: Chat (1)_6
+  - first:
+      213: 6925081924538961549
+    second: Chat (1)_7
+  - first:
+      213: -6556086258663081204
+    second: Chat (1)_8
+  - first:
+      213: 6980729207028434068
+    second: Chat (1)_9
+  - first:
+      213: -1791887756338672178
+    second: Chat (1)_10
+  - first:
+      213: -3583246552499778717
+    second: Chat (1)_11
+  - first:
+      213: 5179408117927587912
+    second: Chat (1)_12
+  - first:
+      213: 843389084503848510
+    second: Chat (1)_13
+  - first:
+      213: -5639757033844564559
+    second: Chat (1)_14
+  - first:
+      213: 1655726549912516106
+    second: Chat (1)_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +171,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chat (2)_0
+      name: Chat (1)_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 23
-        width: 956
-        height: 978
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +186,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d40a097f4717909e0800000000000000
-      internalID: -1654666640898351027
+      spriteID: 1c2571b35f981a190800000000000000
+      internalID: -7952923780608208191
       vertices: []
       indices: 
       edges: []
@@ -151,7 +196,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b0ae56f10083fed49a45a1a6605ddc62
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +206,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Chat (2)_0: -1654666640898351027
+      Chat (1)_0: -7952923780608208191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
