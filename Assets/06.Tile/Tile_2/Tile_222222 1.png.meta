@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33330a327c746dd4680e121dc4017070
+guid: 9b471551318492945a51c30ab6bf2a3b
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile_222222_0
+      name: Tile_222222_8
       rect:
         serializedVersion: 2
-        x: 18
-        y: 801
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48c3abf23527148f0800000000000000
-      internalID: -558039177208644476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_1
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 800
-        width: 180
-        height: 140
+        x: 175
+        y: 228
+        width: 1350
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65116964375afa49993cb68980c9ccb
-      internalID: -1341253373
+      spriteID: 6004ece20edcfd34da19bf08cf0a3a78
+      internalID: 612331075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_222222_2
+      name: Tile_222222_9
       rect:
         serializedVersion: 2
-        x: 397
-        y: 800
-        width: 180
-        height: 140
+        x: 173
+        y: 321
+        width: 1350
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,118 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7699ccabaeea4d44bb5912434514ed80
-      internalID: -1808884294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_3
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 801
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c40fe2a12bac46e4eb40e58ea87d7e70
-      internalID: 1334060162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_4
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 801
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83bc65fc658cb6b4f96074157a50a4af
-      internalID: -709261134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_5
-      rect:
-        serializedVersion: 2
-        x: 970
-        y: 803
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3917db4375d472e41a449061193e62d5
-      internalID: 386280092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_6
-      rect:
-        serializedVersion: 2
-        x: 1160
-        y: 802
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33ad054caf300564bae6983cbc72298b
-      internalID: 557787249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_222222_7
-      rect:
-        serializedVersion: 2
-        x: 1351
-        y: 801
-        width: 180
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 848ec237c380ef64e9bba35d09b64c86
-      internalID: -1889008446
+      spriteID: eb2e8053dff1dc6438685a5820eddfde
+      internalID: -1924292114
       vertices: []
       indices: 
       edges: []
