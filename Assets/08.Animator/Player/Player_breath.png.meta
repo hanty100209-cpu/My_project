@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 3593028eb3cf2c247aafd4ebd1e2ff0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2161477623174726091
+    second: Player_breath_0
+  - first:
+      213: -2311896179321384521
+    second: Player_breath_1
+  - first:
+      213: 8246721460824365332
+    second: Player_breath_2
+  - first:
+      213: 1516343126182883334
+    second: Player_breath_3
+  - first:
+      213: -7123136577307475697
+    second: Player_breath_4
+  - first:
+      213: 3524927513866145922
+    second: Player_breath_5
+  - first:
+      213: -1977543544364190814
+    second: Player_breath_6
+  - first:
+      213: 7786274407215330920
+    second: Player_breath_7
+  - first:
+      213: -8442425563536403006
+    second: Player_breath_8
+  - first:
+      213: -7715930711660876455
+    second: Player_breath_9
+  - first:
+      213: -457297960173567152
+    second: Player_breath_10
+  - first:
+      213: 6969277988071701132
+    second: Player_breath_11
+  - first:
+      213: -7910516139775130551
+    second: Player_breath_12
+  - first:
+      213: 24175949758362289
+    second: Player_breath_13
+  - first:
+      213: -8285285860848773816
+    second: Player_breath_14
+  - first:
+      213: -3538855782446488901
+    second: Player_breath_15
+  - first:
+      213: 3920521951703738528
+    second: Player_breath_16
+  - first:
+      213: 7359699094547737155
+    second: Player_breath_17
+  - first:
+      213: 815221560472035884
+    second: Player_breath_18
+  - first:
+      213: -7069837672903980471
+    second: Player_breath_19
+  - first:
+      213: -3460905966007296413
+    second: Player_breath_20
+  - first:
+      213: -8534885444929167714
+    second: Player_breath_21
+  - first:
+      213: -88619047929643342
+    second: Player_breath_22
+  - first:
+      213: -6438806895801686950
+    second: Player_breath_23
+  - first:
+      213: 7728855203668408455
+    second: Player_breath_24
+  - first:
+      213: 6477446632095546474
+    second: Player_breath_25
+  - first:
+      213: -6415508252273589271
+    second: Player_breath_26
+  - first:
+      213: -3582070783120565487
+    second: Player_breath_27
+  - first:
+      213: -4719533880960161682
+    second: Player_breath_28
+  - first:
+      213: 7582832182995641721
+    second: Player_breath_29
+  - first:
+      213: 2094714022067714572
+    second: Player_breath_30
+  - first:
+      213: -2094038271947378073
+    second: Player_breath_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_breath_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 308
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.47090453, y: 0.28485534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1094f327c1ffd10800000000000000
+      internalID: 2161477623174726091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_breath_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 310
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.4757537, y: 0.27774325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b157f18cae7aefd0800000000000000
+      internalID: -2311896179321384521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_breath_2
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 308
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.47090435, y: 0.30619216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419d602c97d327270800000000000000
+      internalID: 8246721460824365332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_breath_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 308
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.4563569, y: 0.29907987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6007cb11a022b0510800000000000000
+      internalID: 1516343126182883334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_breath_4
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 309
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.45150775, y: 0.3115263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010ffed509852d90800000000000000
+      internalID: -7123136577307475697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_breath_5
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 308
+        width: 165
+        height: 450
+      alignment: 9
+      pivot: {x: 0.4612053, y: 0.29552382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2801ef2e5ee0be030800000000000000
+      internalID: 3524927513866145922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a7eedc32b3193a0429e8aede2ae11710
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player_breath_0: 2161477623174726091
+      Player_breath_1: -2311896179321384521
+      Player_breath_10: -457297960173567152
+      Player_breath_11: 6969277988071701132
+      Player_breath_12: -7910516139775130551
+      Player_breath_13: 24175949758362289
+      Player_breath_14: -8285285860848773816
+      Player_breath_15: -3538855782446488901
+      Player_breath_16: 3920521951703738528
+      Player_breath_17: 7359699094547737155
+      Player_breath_18: 815221560472035884
+      Player_breath_19: -7069837672903980471
+      Player_breath_2: 8246721460824365332
+      Player_breath_20: -3460905966007296413
+      Player_breath_21: -8534885444929167714
+      Player_breath_22: -88619047929643342
+      Player_breath_23: -6438806895801686950
+      Player_breath_24: 7728855203668408455
+      Player_breath_25: 6477446632095546474
+      Player_breath_26: -6415508252273589271
+      Player_breath_27: -3582070783120565487
+      Player_breath_28: -4719533880960161682
+      Player_breath_29: 7582832182995641721
+      Player_breath_3: 1516343126182883334
+      Player_breath_30: 2094714022067714572
+      Player_breath_31: -2094038271947378073
+      Player_breath_4: -7123136577307475697
+      Player_breath_5: 3524927513866145922
+      Player_breath_6: -1977543544364190814
+      Player_breath_7: 7786274407215330920
+      Player_breath_8: -8442425563536403006
+      Player_breath_9: -7715930711660876455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

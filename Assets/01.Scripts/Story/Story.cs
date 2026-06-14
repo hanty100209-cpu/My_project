@@ -2,7 +2,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Story : MonoBehaviour
+public class StoryChat : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textname;
     [SerializeField] private TextMeshProUGUI _textsent;
@@ -12,7 +12,7 @@ public class Story : MonoBehaviour
 
     [SerializeField] private string[] _name;
     [SerializeField] private string[] _sent;
-    private void Start()
+    private void OnEnable()
     {
         SetChat();
     }

@@ -13,13 +13,18 @@ public class PlayerMovement : MonoBehaviour
     private bool _isfloor = true;
     public bool _isshift = false;
     [SerializeField] private GameObject _onpc_b;
-
+    private Animator anim;
+    private Vector3 oriscale;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _onpc_b.SetActive(false);
+        anim = GetComponent<Animator>();
     }
-
+    private void Start()
+    {
+        oriscale = transform.localScale;
+    }
     private void Update()
     {
         if (UISkillManager.instance._unlockjump && _isfloor)
@@ -37,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     _isshift = false;
                     _onpc_b.SetActive(false);
+                    anim.SetBool("Shift", false);
                 }
                 else if(!_isshift&&_isfloor)
                 {
@@ -46,13 +52,26 @@ public class PlayerMovement : MonoBehaviour
             }
         }//shift
     }
-
+   
     private void FixedUpdate()
     {
         _rb.linearVelocity = new Vector2(_moveDir.x * _speed, _rb.linearVelocity.y);
+        if (anim != null)
+        {
+            anim.SetBool("Move", _moveDir != Vector2.zero ? true : false);
+        }
+        if (_moveDir.x > 0)
+        {
+            transform.localScale = new Vector3(-oriscale.x, oriscale.y, oriscale.z);
+        }
+        else if (_moveDir.x < 0)
+        {
+            transform.localScale = new Vector3(oriscale.x, oriscale.y, oriscale.z);
+        }
     }
     public void OnMove(InputValue value)
     {
+        
         _moveDir = value.Get<Vector2>();
     }
     public void Jump()
@@ -61,11 +80,16 @@ public class PlayerMovement : MonoBehaviour
         {
             _isfloor = false;
             _rb.linearVelocityY = _jumpForce;
+            anim.SetBool("Jump",true);
         }
     }//점프
     
     private IEnumerator Shift()
     {
+        if (anim != null)
+        {
+            anim.SetBool("Shift", true);
+        }
         _shiftposition = transform.position;
         _onpc_b.SetActive(true);
         while (_isshift)
@@ -79,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             _isfloor = true;
+            anim.SetBool("Jump", false);
         }
         
     }
