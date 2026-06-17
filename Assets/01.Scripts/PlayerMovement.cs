@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed = 8f;
     [SerializeField] private float _jumpForce = 2f;
     [SerializeField] private Q2 _q2;
+    [SerializeField] private Save_data _data;
     private Vector2 _shiftposition;
     private Vector2 _moveDir;
     private bool _isfloor = true;
@@ -33,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Jump();
             }
-        }//점프
+        }
         if (_q2._unlockshift)
         {
             if (Keyboard.current.leftShiftKey.wasPressedThisFrame)
@@ -50,7 +52,11 @@ public class PlayerMovement : MonoBehaviour
                     StartCoroutine(Shift());
                 }
             }
-        }//shift
+        }
+        if(Keyboard.current.rKey.wasPressedThisFrame)
+        {
+            Attack();
+        }
     }
    
     private void FixedUpdate()
@@ -83,6 +89,37 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Jump",true);
         }
     }//점프
+    public void Attack()
+    {
+        if(!_isshift&&!_iscool)
+        {
+            if (_data._sword2)
+            {
+                StartCoroutine(Cool());
+                Sword2();//사기r검
+            }
+            else if (_data._sword1)
+            {
+                StartCoroutine(Cool());
+                Sword1();//일반
+            }
+        }
+    }
+    bool _iscool = false;
+    private IEnumerator Cool()
+    {
+        _iscool = true;
+        yield return new WaitForSeconds(1.1f);
+        _iscool = false;
+    }
+    public void Sword1()
+    {
+
+    }
+    public void Sword2()
+    {
+        anim.SetTrigger("Attack2");
+    }
     
     private IEnumerator Shift()
     {
@@ -105,6 +142,6 @@ public class PlayerMovement : MonoBehaviour
             _isfloor = true;
             anim.SetBool("Jump", false);
         }
-        
     }
+
 }

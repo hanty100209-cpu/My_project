@@ -8,6 +8,9 @@ public class Password : MonoBehaviour
     [SerializeField] private GameObject isJob;
     [SerializeField] private int want_input;
     [SerializeField] private Player data;
+    [SerializeField] private GameObject want_1;
+    [SerializeField] private GameObject want_2;
+    private GameObject current_job;
     public void InputNumber()
     {
         string inputText = inputField.text;
@@ -37,11 +40,48 @@ public class Password : MonoBehaviour
                     Debug.Log("NO_Password");
                 }
             }
+            if(want_input==117)
+            {
+                if (resultNumber == want_input)
+                {
+                    nextJob.SetActive(true);
+                    isJob.SetActive(false);
+                }
+                else
+                {
+                    Debug.Log("NO_Password");
+                }
+            }
 
         }
         else
         {
-            Debug.LogWarning("입력된 값이 없거나 올바른 숫자가 아닙니다.");
+            
+        }
+        
+    }
+    public void InputString()
+    {
+        if (inputField.text != null)
+        {
+            if ("사이버 빌딩" == inputField.text)
+            {
+                want_1.SetActive(true);
+                if (current_job != null)
+                {
+                    current_job.SetActive(false);
+                }
+                current_job = want_1;
+            }
+            if ("404" == inputField.text)
+            {
+                want_2.SetActive(true);
+                if (current_job != null)
+                {
+                    current_job.SetActive(false);
+                }
+                current_job = want_2;
+            }
         }
     }
 }

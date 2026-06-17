@@ -9,11 +9,16 @@ public class Reset_so : MonoBehaviour
     public void Re()
     {
         m.gravity = 1;
+        m.scale = 1.3f;
+        m.b_Visible = false;
         pc._job1 = true;
         pc._job2 = true;
         save.playerPosition=new Vector3(0,0,0);
         save._canshift = false;
         save._candoublejump = false;
+        save._sword1 = false;
+        save._sword2 = false;
+        save._gun1 = false;
         EditorUtility.SetDirty(m);
         EditorUtility.SetDirty(pc);
         EditorUtility.SetDirty(save);

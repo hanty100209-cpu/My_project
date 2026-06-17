@@ -4,7 +4,7 @@ public class UISetactive : MonoBehaviour
 {
     private GameObject _player;
     [SerializeField]private GameObject _ui;//활성화/비활성화 할 ui
-    private float _range = 3; // 비/활성화 거리
+    [SerializeField] private float _range = 1.8f; // 비/활성화 거리
 
     private void OnEnable()
     {

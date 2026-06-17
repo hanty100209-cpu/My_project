@@ -9,6 +9,7 @@ public class Save_data : ScriptableObject
     [Header("[ 기능 해금도 ]")]
     public bool _canshift = false;
     public bool _candoublejump = false;
-    public bool _sword = false;
+    public bool _sword1 = false;
+    public bool _sword2 = false;
     public bool _gun1 = false;
 }
