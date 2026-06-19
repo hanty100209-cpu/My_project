@@ -61,7 +61,7 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void AttackHP(int value)
+    public void MonHP(int value)
     {
         currenthp -= value;
         Debug.Log("피격 받음" + currenthp);
@@ -73,7 +73,6 @@ public class Monster : MonoBehaviour
 
     void Update()
     {
-        MoveToPlayer();
         if (player == null || m_t == null) return;
 
         float distance = Vector2.Distance(m_t.position, player.position);     // 거리계산
@@ -85,7 +84,7 @@ public class Monster : MonoBehaviour
         else if (distance <= detectRange)           // 추적
         {
             MoveToPlayer();
-        }
+        }         //추적이 무조건 뒤에 있어야 공격을 할수있음 바꾸지 말것
     }
     
     void MoveToPlayer()

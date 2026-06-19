@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             else if (_data._sword1)
             {
                 StartCoroutine(Cool());
-                Sword1();//일반
+                Sword1();//일반 TM쓰레기
             }
         }
     }
@@ -112,13 +112,16 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         _iscool = false;
     }
+    [SerializeField] private GameObject _hitcoll;
     public void Sword1()
     {
-
+        anim.SetTrigger("Attack1");
+        _hitcoll.SetActive(true);
     }
     public void Sword2()
     {
         anim.SetTrigger("Attack2");
+        _hitcoll.SetActive(true);
     }
     
     private IEnumerator Shift()
@@ -140,8 +143,11 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             _isfloor = true;
-            anim.SetBool("Jump", false);
         }
+        anim.SetBool("Jump", false);
     }
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _isfloor = false;
+    }
 }

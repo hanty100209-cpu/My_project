@@ -10,6 +10,8 @@ public class Password : MonoBehaviour
     [SerializeField] private Player data;
     [SerializeField] private GameObject want_1;
     [SerializeField] private GameObject want_2;
+    [SerializeField] private GameObject want_3;
+    [SerializeField] private GameObject want_4;
     private GameObject current_job;
     public void InputNumber()
     {
@@ -64,7 +66,7 @@ public class Password : MonoBehaviour
     {
         if (inputField.text != null)
         {
-            if ("사이버 빌딩" == inputField.text)
+            if ("사이버 빌딩" == inputField.text||"사이버빌딩" == inputField.text)
             {
                 want_1.SetActive(true);
                 if (current_job != null)
@@ -73,7 +75,7 @@ public class Password : MonoBehaviour
                 }
                 current_job = want_1;
             }
-            if ("404" == inputField.text)
+            if ("1337" == inputField.text)
             {
                 want_2.SetActive(true);
                 if (current_job != null)
@@ -81,6 +83,24 @@ public class Password : MonoBehaviour
                     current_job.SetActive(false);
                 }
                 current_job = want_2;
+            }
+            if ("start" == inputField.text||"Start" == inputField.text)
+            {
+                want_3.SetActive(true);
+                if (current_job != null)
+                {
+                    current_job.SetActive(false);
+                }
+                current_job = want_3;
+            }
+            if ("warring top" == inputField.text||"Warring top" == inputField.text||"Warringtop" == inputField.text||"warringtop" == inputField.text)
+            {
+                want_4.SetActive(true);
+                if (current_job != null)
+                {
+                    current_job.SetActive(false);
+                }
+                current_job = want_4;
             }
         }
     }

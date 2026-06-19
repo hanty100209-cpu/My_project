@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Background
+  - Mon
   layers:
   - Default
   - TransparentFX

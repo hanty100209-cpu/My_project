@@ -2971,6 +2971,7 @@ MonoBehaviour:
   m: {fileID: 11400000, guid: 7e87c2471bc8e7445897ec6625447f71, type: 2}
   pc: {fileID: 11400000, guid: 5fb78caa7d4359846af1e396e57dfa45, type: 2}
   save: {fileID: 11400000, guid: 4973cc01d14ca9440b5bc894161efe96, type: 2}
+  hidden: {fileID: 11400000, guid: c798667dced79c74285b7aea3b45b4ea, type: 2}
 --- !u!114 &1800236709
 MonoBehaviour:
   m_ObjectHideFlags: 0
