@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Hacking_bug
   m_EditorClassIdentifier: 
   _hp: 13
-  _damage: 10
-  _detectRange: 5
-  _attackCooldown: 5
-  _attackRange: 5
-  _moveSpeed: 5
+  _damage: 5
+  _detectRange: 12
+  _attackCooldown: 2
+  _attackRange: 2
+  _moveSpeed: 8

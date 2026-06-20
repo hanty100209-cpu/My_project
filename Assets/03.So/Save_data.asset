@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265fa284ae8116041b5deaf2f93b4367, type: 3}
   m_Name: Save_data
   m_EditorClassIdentifier: 
-  playerPosition: {x: 111.595795, y: -0.3774832, z: 0}
+  playerPosition: {x: 78.64161, y: 0.9828981, z: 0}
   _canshift: 1
   _candoublejump: 1
   _sword1: 0

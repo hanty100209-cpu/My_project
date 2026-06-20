@@ -7,8 +7,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Last_jump_ani
-  m_Speed: 0.3
+  m_Name: jump_ani
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -5066319993363539876}
@@ -24,7 +24,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ce28d5d5d1ccf5b4a9547219fb427746, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0328f2dea3003e04ab03b6209cd72bdf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -128,7 +128,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.39999998
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -302,7 +302,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Working_ani
+  m_Name: Walking_ani
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
@@ -582,7 +582,7 @@ AnimatorStateMachine:
     m_Position: {x: -60, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8292078575489415320}
-    m_Position: {x: 310, y: 30, z: 0}
+    m_Position: {x: 300, y: -30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7502786264220280661}
     m_Position: {x: 770, y: 190, z: 0}
@@ -606,7 +606,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test_ani
+  m_Name: Onpc_ani
   m_Speed: 0.4
   m_CycleOffset: 0
   m_Transitions:

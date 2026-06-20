@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mission
   m_EditorClassIdentifier: 
   gravity: 1
-  scale: 0.1
+  scale: 0.3
   b_Visible: 0
   warring_set: 1

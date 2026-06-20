@@ -22,7 +22,7 @@ public class Hit : MonoBehaviour
     }
     private IEnumerator Fal()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.7f);
         gameObject.SetActive(false);
     }
 }

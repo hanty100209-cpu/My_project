@@ -109,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Cool()
     {
         _iscool = true;
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(0.7f);
         _iscool = false;
     }
     [SerializeField] private GameObject _hitcoll;
@@ -148,6 +148,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        _isfloor = false;
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            if (Mathf.Abs(_rb.linearVelocity.y) < 0.1f)
+            {
+                return;
+            }
+            _isfloor = false;
+        }
     }
+
 }

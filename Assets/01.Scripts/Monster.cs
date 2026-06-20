@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    public Mon_D date;        // SO 데이터
+    public Hacking_bug date;        // SO 데이터
 
     private float currenthp;           // 현재 체력
     private int currentdamage;       // 데미지
@@ -20,12 +20,6 @@ public class Monster : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(InitMonsterSafe());
-    }
-
-    private IEnumerator InitMonsterSafe()
-    {
-        yield return new WaitForSeconds(4.3f);
         GameObject player = GameObject.FindWithTag("Player");
         if (player == null)
         {
@@ -38,6 +32,7 @@ public class Monster : MonoBehaviour
             playerhp = player.GetComponent<Player_hp>();
         }
     }
+
     private Vector3 originalScale;
 
     private void Start()
@@ -73,8 +68,6 @@ public class Monster : MonoBehaviour
 
     void Update()
     {
-        if (player == null || m_t == null) return;
-
         float distance = Vector2.Distance(m_t.position, player.position);     // 거리계산
 
         if (distance <= attackRange)             // 공격
@@ -85,21 +78,26 @@ public class Monster : MonoBehaviour
         {
             MoveToPlayer();
         }         //추적이 무조건 뒤에 있어야 공격을 할수있음 바꾸지 말것
+        else
+        {
+            anim.SetBool("Walking", false);
+        }
     }
     
     void MoveToPlayer()
     {
         if (player == null) return;
 
+        anim.SetBool("Walking",true);
         Vector2 direction = (player.position - transform.position).normalized;
         transform.Translate(direction * moveSpeed * Time.deltaTime);
         if (direction.x > 0)
         {
-            transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
         }
         else if (direction.x < 0)
         {
-            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+            transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
         }
     }
 
@@ -107,8 +105,8 @@ public class Monster : MonoBehaviour
     {
         if (canattack)
         {
-                Player_hp.instance.Playerhp -= currentdamage;
-
+            Player_hp.instance.Playerhp -= currentdamage;
+            anim.SetTrigger("Attack");
             StartCoroutine(CoolTime());
         }
     }
