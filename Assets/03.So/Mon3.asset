@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265fa284ae8116041b5deaf2f93b4367, type: 3}
-  m_Name: Save_data
+  m_Script: {fileID: 11500000, guid: b634ab31d29c52d4bbfa5dfd2ea6a1f7, type: 3}
+  m_Name: Mon3
   m_EditorClassIdentifier: 
-  playerPosition: {x: 57.0745, y: 1.0328974, z: 0}
-  _hp: 100
-  _canshift: 1
-  _candoublejump: 1
-  _sword1: 1
-  _sword2: 0
-  _cansee: 0
+  _mhp: 15
+  trans: {x: 180, y: -2}
+  live: 1

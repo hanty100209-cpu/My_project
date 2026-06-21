@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
     public Hacking_bug date;        // SO 데이터
 
-    private float currenthp;           // 현재 체력
+    private int currenthp;           // 현재 체력
     private int currentdamage;       // 데미지
     private float detectRange = 5f;       //감지 범위
     private float attackRange = 1.5f;             // 사거리
@@ -18,8 +19,11 @@ public class Monster : MonoBehaviour
     [SerializeField] private Player_hp playerhp;
     private Animator anim;//애니매이션
 
+    [SerializeField] private Save_Mon1 save_mon;
+
     private void OnEnable()
     {
+        gameObject.SetActive(save_mon.live);
         GameObject player = GameObject.FindWithTag("Player");
         if (player == null)
         {
@@ -54,15 +58,23 @@ public class Monster : MonoBehaviour
             attackRange = date._attackRange;    // 사거리
             moveSpeed = date._moveSpeed;    // 이속
         }
+        transform.position = save_mon.trans;
+        currenthp = save_mon._mhp;
+
     }
 
     public void MonHP(int value)
     {
+
         currenthp -= value;
+        save_mon._mhp = currenthp;
+        EditorUtility.SetDirty(save_mon);
         Debug.Log("피격 받음" + currenthp);
         if (currenthp <= 0)
         {
-            Destroy(gameObject);
+            save_mon.live= false;
+            EditorUtility.SetDirty(save_mon);
+            gameObject.SetActive(false);
         }
     }
 
@@ -99,6 +111,8 @@ public class Monster : MonoBehaviour
         {
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
         }
+        save_mon.trans = transform.position;
+        EditorUtility.SetDirty(save_mon);
     }
 
     void AttackPlayer()

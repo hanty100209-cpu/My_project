@@ -16,5 +16,6 @@ public class Gravity_player : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         prb.gravityScale = 1;
+        mis.gravity = 1;
     }
 }
