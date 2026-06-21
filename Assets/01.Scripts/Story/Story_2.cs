@@ -19,5 +19,6 @@ public class Story_2 : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
         _story_2.SetActive(true);
         _chat.SetChat();
+        gameObject.SetActive(false);
     }
 }

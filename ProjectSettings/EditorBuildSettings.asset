@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scenes/ON_PC.unity
     guid: 9f698ea0bfd9b244fab8e513af79efaa
+  - enabled: 1
+    path: Assets/00.Scenes/Hidden_End1.unity
+    guid: 36d93b911ffdc674b872d21b1d3dcea7
+  - enabled: 1
+    path: Assets/00.Scenes/Hidden_End2.unity
+    guid: 769905462249c5d499eb94ef4cc7500a
+  - enabled: 1
+    path: Assets/00.Scenes/Nomal_End.unity
+    guid: 4273a759e614aa44b9ffc710ca4e03eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

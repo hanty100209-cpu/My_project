@@ -9,6 +9,6 @@ public class Title_B : MonoBehaviour
     }
     public void Eixt()
     {
-        Debug.Log("게임 종료");
+        Application.Quit();
     }
 }

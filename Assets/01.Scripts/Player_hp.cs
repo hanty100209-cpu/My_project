@@ -8,9 +8,16 @@ public class Player_hp : MonoBehaviour
     public static Player_hp instance;
     [field:SerializeField] public int Playerhp { get; set; } = 100;
     [SerializeField] private Slider _bar;
+    [SerializeField] private Save_data data;
+    [SerializeField] private GameObject _die;
     private void Awake()
     {
         instance = this;
+    }
+    private void Start()
+    {
+        Time.timeScale = 1;
+        data._hp = Playerhp;
     }
     private void Update()
     {
@@ -22,6 +29,7 @@ public class Player_hp : MonoBehaviour
     }
     public void Die()
     {
-        SceneManager.LoadScene("Title_Scene");
+        _die.SetActive(true);
+        Time.timeScale = 0;
     }
 }

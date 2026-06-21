@@ -9,9 +9,10 @@ public class Save_player : MonoBehaviour
     [SerializeField] private Q2 _q2;
     [SerializeField] private Rigidbody2D prb;
     [SerializeField] private Mission mis;
-
+    private Player_hp __hp;
     private void Start()
     {
+        __hp = GetComponent<Player_hp>();
         transform.position = save.playerPosition;
         _q2._unlockshift = save._canshift;
         UISkillManager.instance._unlockjump = save._candoublejump;
@@ -24,6 +25,7 @@ public class Save_player : MonoBehaviour
             save.playerPosition = transform.position;
             save._canshift = _q2._unlockshift;
             save._candoublejump = UISkillManager.instance._unlockjump;
+            save._hp = __hp.Playerhp;
             EditorUtility.SetDirty(save);
         }
     }

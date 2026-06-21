@@ -21,7 +21,7 @@ public class Reset_so : MonoBehaviour
         save._candoublejump = false;
         save._sword1 = false;
         save._sword2 = false;
-        save._gun1 = false;
+        save._hp = 100;
         EditorUtility.SetDirty(m);
         EditorUtility.SetDirty(pc);
         EditorUtility.SetDirty(save);

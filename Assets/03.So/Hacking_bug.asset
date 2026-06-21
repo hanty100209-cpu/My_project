@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca54440885d455740b770f89833786b2, type: 3}
   m_Name: Hacking_bug
   m_EditorClassIdentifier: 
-  _hp: 13
+  _hp: 15
   _damage: 5
-  _detectRange: 12
-  _attackCooldown: 2
+  _detectRange: 7
+  _attackCooldown: 1.5
   _attackRange: 2
   _moveSpeed: 8
