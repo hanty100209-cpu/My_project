@@ -5,6 +5,13 @@ public class SEEName : MonoBehaviour
     [SerializeField] private Save_data data;
     private void Start()
     {
-        gameObject.SetActive(data._cansee);
+        if(data._cansee)
+        {
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

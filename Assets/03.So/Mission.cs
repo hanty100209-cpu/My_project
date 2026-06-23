@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Mission", menuName = "Mission/Mission")]
-public class Mission : ScriptableObject
+public class Mission : SO
 {
     public float gravity=1;
     public float scale=1.3f;

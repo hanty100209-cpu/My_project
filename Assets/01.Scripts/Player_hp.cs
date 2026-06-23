@@ -17,7 +17,7 @@ public class Player_hp : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
-        data._hp = Playerhp;
+        Playerhp = data._hp;
     }
     private void Update()
     {

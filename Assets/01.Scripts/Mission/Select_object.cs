@@ -13,7 +13,9 @@ public class Select_object : MonoBehaviour
         if (float.TryParse(inputText, out float resultNumber))
         {
             m.scale = resultNumber;
+#if UNITY_EDITOR
             EditorUtility.SetDirty(m);
+#endif
         }
         else
         {

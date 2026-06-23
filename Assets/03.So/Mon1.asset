@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mon1
   m_EditorClassIdentifier: 
   _mhp: 15
-  trans: {x: 100, y: 0}
+  trans: {x: 100, y: 4}
   live: 1

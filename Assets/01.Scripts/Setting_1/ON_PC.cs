@@ -6,6 +6,6 @@ public class ON_PC : MonoBehaviour
 {
     public void ON_pc()
     {
-        SceneManager.LoadScene(3);
+        Somanager.MoveToScene("ON_PC");
     }
 }

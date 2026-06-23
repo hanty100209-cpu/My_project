@@ -1,23 +1,28 @@
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Year : MonoBehaviour
 {
     public TMP_InputField inputField;
     [SerializeField] private Player so;
-
+    string inputText;
     public void InputData()
     {
-        string inputText = inputField.text;
-        if (inputText != null)
+        if (string.IsNullOrWhiteSpace(inputField.text)) return;
+
+        if (int.TryParse(inputField.text, out int result))
         {
-            so.year = int.Parse(inputText);
+            so.year = result;
+#if UNITY_EDITOR
             EditorUtility.SetDirty(so);
+#endif
         }
-        else
+        if (so.p_name != null)
         {
-            Debug.Log("플레이어 연도 등록 불가");
+            gameObject.SetActive(false);
+            Somanager.MoveToScene("Start_story");
         }
     }
 }

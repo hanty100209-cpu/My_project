@@ -1,4 +1,4 @@
-using UnityEditor.Rendering;
+
 using UnityEngine;
 
 public class Starat_set : MonoBehaviour

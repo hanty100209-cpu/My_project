@@ -26,7 +26,9 @@ public class Save_player : MonoBehaviour
             save._canshift = _q2._unlockshift;
             save._candoublejump = UISkillManager.instance._unlockjump;
             save._hp = __hp.Playerhp;
+#if UNITY_EDITOR
             EditorUtility.SetDirty(save);
+#endif
         }
     }
     private IEnumerator Gavity()

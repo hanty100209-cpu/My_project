@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Mon_D", menuName = "Mon_D/Mon_D")]
-abstract public class Mon_D : ScriptableObject
+abstract public class Mon_D : SO
 {
     public int _hp;
     public int _damage;

@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/00.Scenes/Hidden_End1.unity
     guid: 36d93b911ffdc674b872d21b1d3dcea7
   - enabled: 1
-    path: Assets/00.Scenes/Hidden_End2.unity
-    guid: 769905462249c5d499eb94ef4cc7500a
+    path: Assets/00.Scenes/Nomal_End1 1.unity
+    guid: 3958b356a291a7e4bbbfbac45349342b
   - enabled: 1
-    path: Assets/00.Scenes/Nomal_End.unity
-    guid: 4273a759e614aa44b9ffc710ca4e03eb
+    path: Assets/00.Scenes/Nomal_End1 2.unity
+    guid: db94efdc96fe058489eedfc0592eb1f8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

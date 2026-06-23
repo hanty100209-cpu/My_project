@@ -291,7 +291,6 @@ GameObject:
   - component: {fileID: 117547127}
   - component: {fileID: 117547126}
   - component: {fileID: 117547131}
-  - component: {fileID: 117547130}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -333,6 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1524263589}
   so: {fileID: 11400000, guid: 864bd892208b8124ea7969dcdba6c437, type: 2}
+  ne: {fileID: 1738554848}
 --- !u!114 &117547127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,18 +401,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 117547130}
-        m_TargetAssemblyTypeName: ONOFF, Assembly-CSharp
-        m_MethodName: Set_true
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &117547128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,19 +439,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117547123}
   m_CullTransparentMesh: 1
---- !u!114 &117547130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117547123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b005a2ac2ee034baeea5a610c67838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _object: {fileID: 1738554848}
 --- !u!114 &117547131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2231,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &1385202394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385202396}
+  - component: {fileID: 1385202395}
+  m_Layer: 0
+  m_Name: Somanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1385202395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385202394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6fe5760e81e0444853430cca4342d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soList:
+  - {fileID: 11400000, guid: 1c7d7a659a555724098b3e27037a10db, type: 2}
+  - {fileID: 11400000, guid: c798667dced79c74285b7aea3b45b4ea, type: 2}
+  - {fileID: 11400000, guid: 7e87c2471bc8e7445897ec6625447f71, type: 2}
+  - {fileID: 11400000, guid: 700f73ff32475154e8adccd02c549b1e, type: 2}
+  - {fileID: 11400000, guid: 64ca54e9735bede4aaba4b07f81a5629, type: 2}
+  - {fileID: 11400000, guid: 107ac459261eba141a0d0e568fb5bf13, type: 2}
+  - {fileID: 11400000, guid: 5fb78caa7d4359846af1e396e57dfa45, type: 2}
+  - {fileID: 11400000, guid: 864bd892208b8124ea7969dcdba6c437, type: 2}
+  - {fileID: 11400000, guid: 4973cc01d14ca9440b5bc894161efe96, type: 2}
+--- !u!4 &1385202396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385202394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.662952, y: 2.3242457, z: -0.3551839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1481977138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,7 +2298,6 @@ GameObject:
   - component: {fileID: 1481977143}
   - component: {fileID: 1481977142}
   - component: {fileID: 1481977141}
-  - component: {fileID: 1481977140}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2297,19 +2325,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.4717, y: -177.5282}
   m_SizeDelta: {x: 287.0566, y: 157.0565}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1481977140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481977138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 842644e31fb30564d862f7b9aceb33b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  load_Scene: 1
 --- !u!114 &1481977141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,18 +2386,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1481977141}
         m_TargetAssemblyTypeName: Year, Assembly-CSharp
         m_MethodName: InputData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1481977140}
-        m_TargetAssemblyTypeName: Scene_Load, Assembly-CSharp
-        m_MethodName: Load
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2972,6 +2975,9 @@ MonoBehaviour:
   pc: {fileID: 11400000, guid: 5fb78caa7d4359846af1e396e57dfa45, type: 2}
   save: {fileID: 11400000, guid: 4973cc01d14ca9440b5bc894161efe96, type: 2}
   hidden: {fileID: 11400000, guid: c798667dced79c74285b7aea3b45b4ea, type: 2}
+  h1: {fileID: 11400000, guid: 700f73ff32475154e8adccd02c549b1e, type: 2}
+  h2: {fileID: 11400000, guid: 64ca54e9735bede4aaba4b07f81a5629, type: 2}
+  h3: {fileID: 11400000, guid: 107ac459261eba141a0d0e568fb5bf13, type: 2}
 --- !u!114 &1800236709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3046,10 +3052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3519,3 +3525,4 @@ SceneRoots:
   - {fileID: 2027818614}
   - {fileID: 700054422}
   - {fileID: 1287391444}
+  - {fileID: 1385202396}

@@ -5,6 +5,6 @@ public class Exit_pc : MonoBehaviour
 {
     public void PCExit()
     {
-        SceneManager.LoadScene(2);
+        Somanager.MoveToScene("Game_Start_frist");
     }
 }

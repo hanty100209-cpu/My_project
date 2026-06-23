@@ -7,6 +7,8 @@ public class Hidden_door : MonoBehaviour
     public void Hidden1()
     {
         hh._heiden_ = true;
+#if UNITY_EDITOR
         EditorUtility.SetDirty(hh);
+#endif
     }
 }

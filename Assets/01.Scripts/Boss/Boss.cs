@@ -1,0 +1,118 @@
+using System.Collections;
+using UnityEditor;
+using UnityEngine;
+
+public class Boss : MonoBehaviour
+{
+    private int currenthp=100;           // 현재 체력
+    private int currentdamage=8;       // 데미지
+    private float detectRange = 100f;       //감지 범위
+    private float attackRange = 2f;             // 사거리
+    private float moveSpeed = 2f;                       //이속
+    private float attackCooldown = 1.2f;           // 공속
+
+    public Transform player;             // 플레이어 위치
+    public Transform m_t;                // 몬스터의 transform
+    [SerializeField] private Player_hp playerhp;
+    private Animator anim;//애니매이션
+
+
+    private void OnEnable()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player == null)
+        {
+            player = GameObject.Find("player");
+        }
+
+        if (player != null)
+        {
+            this.player = player.GetComponent<Transform>();
+            playerhp = player.GetComponent<Player_hp>();
+        }
+    }
+
+    private Vector3 originalScale;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();//애니매이션
+        if (m_t == null) m_t = GetComponent<Transform>();
+
+        if (m_t != null)
+        {
+            originalScale = m_t.localScale;
+        }
+    }
+
+    public void MonHP(int value)
+    {
+
+        currenthp -= value;
+        Debug.Log("피격 받음" + currenthp);
+        if (currenthp <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    void Update()
+    {
+        float distance = Vector2.Distance(m_t.position, player.position);     // 거리계산
+
+        if (distance <= attackRange)             // 공격
+        {
+            AttackPlayer();
+        }
+        else if (distance <= detectRange)           // 추적
+        {
+            MoveToPlayer();
+        }         //추적이 무조건 뒤에 있어야 공격을 할수있음 바꾸지 말것
+        else
+        {
+            anim.SetBool("Walking", false);
+        }
+    }
+
+    void MoveToPlayer()
+    {
+        if (player == null) return;
+
+        anim.SetBool("Walking", true);
+        Vector2 direction = (player.position - transform.position).normalized;
+        transform.Translate(direction * moveSpeed * Time.deltaTime);
+        if (direction.x > 0)
+        {
+            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+        }
+        else if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+        }
+    }
+
+    void AttackPlayer()
+    {
+        if (canattack)
+        {
+            Player_hp.instance.Playerhp -= currentdamage;
+            anim.SetTrigger("Attack");
+            StartCoroutine(CoolTime());
+        }
+    }
+    bool canattack = true;
+    private IEnumerator CoolTime()
+    {
+        canattack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canattack = true;
+    }
+
+    private void OnDrawGizmosSelected() // 기즈모 색깔 표시(사거리,감지 범위)
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectRange); // 감지범위
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange); // 공격범위
+    }
+}

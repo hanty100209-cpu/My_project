@@ -12,8 +12,11 @@ public class Gravity : MonoBehaviour
         string inputText = inputField.text;
         if (float.TryParse(inputText, out float resultNumber))
         {
+            if(-5<=resultNumber&&10>=resultNumber)
             m.gravity = resultNumber;
+#if UNITY_EDITOR
             EditorUtility.SetDirty(m);
+#endif
         }
         else
         {

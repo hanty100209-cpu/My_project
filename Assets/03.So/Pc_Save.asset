@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9a714ed37f00c4dbc476d860ceb59d, type: 3}
   m_Name: Pc_Save
   m_EditorClassIdentifier: 
-  _job1: 0
+  _job1: 1
   _job2: 1

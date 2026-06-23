@@ -68,12 +68,16 @@ public class Monster : MonoBehaviour
 
         currenthp -= value;
         save_mon._mhp = currenthp;
+#if UNITY_EDITOR
         EditorUtility.SetDirty(save_mon);
+#endif
         Debug.Log("피격 받음" + currenthp);
         if (currenthp <= 0)
         {
             save_mon.live= false;
+#if UNITY_EDITOR
             EditorUtility.SetDirty(save_mon);
+#endif
             gameObject.SetActive(false);
         }
     }
@@ -112,7 +116,9 @@ public class Monster : MonoBehaviour
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
         }
         save_mon.trans = transform.position;
+#if UNITY_EDITOR
         EditorUtility.SetDirty(save_mon);
+#endif
     }
 
     void AttackPlayer()
